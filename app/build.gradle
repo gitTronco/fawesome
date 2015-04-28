@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'maven'
 
+version = '0.0.1'
+group = 'com.troncodroide.fawesome'
+
 uploadArchives {
     repositories.mavenDeployer {
         repository(url: "file://../Users/Tronco/AndroidStudioProjects/fawesome/maven/")
@@ -14,8 +17,8 @@ android {
         applicationId "com.troncodroide.fawesome"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.0"
     }
     buildTypes {
         release {

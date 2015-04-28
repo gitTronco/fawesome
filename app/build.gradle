@@ -1,5 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'maven'
 
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file://../Users/Tronco/AndroidStudioProjects/fawesome/maven/")
+    }
+}
 android {
     compileSdkVersion 22
     buildToolsVersion "21.1.2"
